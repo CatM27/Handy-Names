@@ -1,9 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 body{
-background: #F9D65A;
-font-family: 'Indie Flower', cursive;
-min-height: 100%;
-text-align:center;
+  background: #F9D65A;
+  font-family: 'Indie Flower', cursive;
+  min-height: 100%;
+  text-align:center;
 }
 
 img {
