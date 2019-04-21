@@ -135,18 +135,19 @@ section {
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
-  background-color: rgba(169,169,169,0.5);
+  background-color: white;
   box-sizing: border-box;
   border: 1px solid white;
   border-radius: .5em;
-  margin: 20px auto;
-  width: 85%;
+  margin: 1px auto;
+  width: 95%;
   padding: 20px;
+  font-weight: bold;
 }
 
 .container #content {
-margin: 20px auto;
-background-color: rgba(169,169,169,0.6);
+margin: 1px auto;
+background-color: rgba(194, 82, 138, 0.7);
 border: 1px solid white;
 border-radius: 1em;
 width: 95%;
@@ -163,6 +164,7 @@ div.container #content p {
   word-wrap: normal;
   margin: 20px 15px 20px 15px;
   padding: 20px 15px 5px 15px;
+  font-weight: normal;
 
 }
 
@@ -198,22 +200,53 @@ div.form input {
   width: 70%;
 }
 
+.container #carousel {
+margin:1px auto 10px auto;
+background-color: rgba(144,238,144, 0.7);
+border: 1px solid white;
+border-radius: 1em;
+width: 95%;
+text-align: center;
+padding: 30px;
+}
 
-@@media screen and (max-width: 768px){
+.container #carousel h3 {
+  font-size: 40px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.container #carousel h4 {
+  font-size:70px;
+  font-weight: bold;
+}
+
+.carousel-item {
+  border-radius: 1em;
+}
+
+$('.carousel').carousel()
+
+
+@media screen and (max-width: 768px){
   .container h1 {
-    width: 80%;
+    width: 90%;
   }
   .container #content {
     width: 90%;
   }
+  .container #carousel {
+    width: 90%;
+  }
 }
+
 
 footer {
   background-color: white;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   margin: 20px auto;
-  width: 100%
+  width: 100%;
 }
 
 .footer-content {
@@ -229,48 +262,70 @@ p.madeby {
   padding: 0 5px;
   margin: 0 auto;
 }
-
-div.footer-social-icons {
-  height: auto;
-  margin: auto;
-  width: 100%;
-  text-align: center;
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
 }
 
-div.footer-social-icons ul {
-  margin: 0;
-  padding: 0;
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoInsta:hover {
+	background-color:#BD3518;
 }
 
-div.footer-social-icons ul li {
-  list-style-type: none;
-  display: inline-block;
+.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoInsta:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
 }
 
-div.footer-social-icons ul li a {
-  font-size: 30px;
-  display: block;
-  text-decoration: none;
-  border-radius: 50%;
-  margin: 10px 2px;
-  padding: 5px 20px ;
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+	background-color: #D3D3D3;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
 }
 
-.fa:hover {
-    opacity: 0.5;
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
 }
-
-.fa.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa.fa-instagram {
-  background: #125688;
-  color: white;
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
 }
