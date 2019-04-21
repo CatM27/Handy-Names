@@ -1,0 +1,289 @@
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+* {
+margin:0;
+padding:0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body {
+  background-image: url("./Images/background.jpg");
+  -webkit-background-size: cover;
+  box-sizing: border-box;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: repeat-y;
+  width: auto;
+  height: 100%;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  overflow-x: visible;
+}
+
+div.container {
+  margin: 40px auto;
+}
+
+header.header {
+  margin: 25px auto;
+}
+
+.header {
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid white;
+  border-radius: 1em;
+  padding: 90px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+}
+
+header p {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-size: 35px;
+  text-align: center;
+}
+
+a.button {
+  background-color: rgba(255,255,255,0.9);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 45%;
+  margin-top: 80%;
+}
+
+a.button:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+nav {
+  position: relative;
+  margin: 20px 0;
+}
+
+.navbar-toggler {
+  background-color: rgba(173,216,230 ,.7);
+  height: 50px;
+  width: 50px;
+  margin: 5px 30px 5px 0;
+  background-image: none;
+  border: none;
+  position: relative;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 27px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.icon-bar {
+  background-color: black;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 7px;
+}
+
+.navbar-brand {
+  font-size: 35px;
+  padding: 0 30px;
+  position: relative;
+}
+
+.nav-item {
+  font-size: 20px !important;
+  padding-left: 0.5em;
+  margin-right: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+.navbar-nav li a {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: all 1s ease;
+  background: rgba(0, 191, 255, 0);
+  color: #696969;
+  border-top: 4px solid rgba(0, 191, 255, 0);
+  border-bottom: 4px solid rgba(0, 191, 255, 0);
+  padding: 20px 0;
+  margin: 10px 20px;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #696969;
+    border-top: 4px solid #696969;
+    border-bottom: 4px solid #696969;
+    padding: 3px 3px;
+}
+
+button.navbar-toggler {
+  overflow: visible;
+}
+
+.navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    position: relative;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background-color: rgba(233,206,1,0.7);
+  height: 100%;
+  width: 80%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid white;
+  border-radius: 1em;
+}
+
+h3 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.col-sm h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+div.wrapper {
+  margin: 30px auto;
+}
+
+div.wrapper p {
+  font-size: 30px;
+}
+
+footer {
+  background-color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 20px auto;
+  width: 100%
+}
+
+.footer-content {
+  text-align: center;
+  width:100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+p.madeby {
+  font-size: 20px;
+  text-align: center;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoInsta:hover {
+	background-color:#BD3518;
+}
+
+.social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoInsta:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+	background-color: #D3D3D3;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
