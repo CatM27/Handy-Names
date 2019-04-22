@@ -99,11 +99,23 @@ h3 {
 .card {
   height: 100%;
   width: 85%;
+  margin: 20px auto;
   transition: all 1s;
   position: absolute;
-  backface-visibility: hidden;
   border-radius: 25px;
   margin-left: 0%;
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: all 2s ease;
+  transform-style: preserve-3d;
+  height: 80%;
 }
 
 a:hover {
@@ -119,6 +131,7 @@ a:hover {
   width: 30rem;
   perspective: 200rem;
   position: relative;
+  backface-visibility: hidden;
 }
 .card-container:hover .card-front {
   transform: rotateY(180deg);
@@ -133,7 +146,7 @@ a:hover {
 }
 
 .card-back {
-  transform: rotateY(180deg)
+  transform: rotateY(180deg);
   backface-visibility: hidden;
 }
 
