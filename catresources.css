@@ -9,6 +9,7 @@ box-sizing: border-box;
 }
 
 body {
+  background-image: url("./Images png/background.jpg");
   -webkit-background-size: cover;
   box-sizing: border-box;
   background-size: 100%;
