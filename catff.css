@@ -1,11 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 
+@font-face {
+  font-family:Indie Flower;
+  src: url(IndieFlower.ttf);
+}
+
 * {
 margin:0;
 padding:0;
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
+font-family: Indie Flower, cursive;
 }
 
 body {
