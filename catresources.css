@@ -42,8 +42,10 @@ header.header {
 
 h1 {
   font-size: 50px;
-  margin: 10px;
+  margin: 20px;
+  padding: 10px 5px 5px 5px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 header p {
@@ -52,27 +54,8 @@ header p {
 
 h2 {
   color: black;
-  font-size: 35px;
-}
-
-a.button {
-  background-color: rgba(255,255,255,0.9);
-  background-size: cover;
-  background-position: center;
-  border: none;
-  border-radius: 25px;
-  color: black;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
   font-size: 30px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-a.button:hover {
-  color: black;
-  text-decoration: underline;
+  text-align: center;
 }
 
 nav {
@@ -161,34 +144,96 @@ button.navbar-toggler {
     padding: 10px 15px;
 }
 
-.wrapper {
-  margin: 0 auto;
-  background-color: rgba(194,82,138 ,.7);
-  height: 100%;
+.row {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.col-md-4 .col-xs-12 {
+  float: left;
   width: 80%;
-  background-size: cover;
-  background-position: center;
-  border: 1px solid white;
-  border-radius: 1em;
+  padding: 20px 10px;
+  margin: 10px auto;
 }
 
-h3 {
-  font-size: 50px;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  width: 90%;
+  height: 100%;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0);
+  border: rgba(255, 255, 255, 0);
+  padding-top: 10px;
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: all 2s ease;
+  transform-style: preserve-3d;
+  height: 80%;
+}
+
+.card:hover .card-content {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 0 10px;
+  backface-visibility: hidden;
+  border-radius: 25px;
+  text-align:center;
+  line-height:10px;
+}
+
+.card-back {
+  padding: 10px 5px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+}
+
+ h3.card-title {
+  color: black;
+  font-size: 5vh 5vw;
   text-align: center;
-  font-weight: bold;
+  padding: 10px 10px 0 10px;
+  margin-top: 30px;
 }
 
-.col-sm h3 {
-  font-size: 40px;
-  font-weight: bold;
+h4.card-title {
+ color: black;
+ font-size: 5vh 5vw;
+ text-align: center;
+ padding: 10px 10px 0 10px;
+ margin-top: 15px;
+ margin-bottom: 10px;
 }
 
-div.wrapper {
-  margin: 30px auto;
+.card-back p {
+  margin: 20px 10px;
+  padding: 10px 5px;
+  font-size: 3.5vw;
+  text-align: center;
 }
 
-div.wrapper p {
-  font-size: 30px;
+.card-back p a {
+  color: black;
 }
 
 footer {
