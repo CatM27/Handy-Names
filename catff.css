@@ -187,7 +187,7 @@ font-weight: bold;
  h2 {
   color: black;
   font-weight: bold;
-  font-size: 5vw;
+  font-size: 7vw;
   text-align: center;
   margin: 0 auto;
   padding-top: 1.7em;
@@ -213,7 +213,7 @@ h3 {
   color: black;
   text-align: center;
   font-size: 45px;
-  margin: 0px 30px 30px 30px;
+  margin: 0px 20px 30px 20px;
   padding: 10px;
 }
 
@@ -224,7 +224,7 @@ h3 {
 }
 
 a.button {
-  background-color: rgba(233,206,1,0.6);
+  background-color: rgba(233,206,1,0.7);
   background-size: cover;
   background-position: center;
   border: none;

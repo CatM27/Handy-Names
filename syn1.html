@@ -58,6 +58,7 @@
             <label for="name"> Your name:</label>
             <input type="text" name="name" placeholder="Enter Your Name">
             <br>
+			<br>
             <button type= "button" onclick="outputname()">Submit</button>
           </form>
       </div>
@@ -65,16 +66,11 @@
 
     <p id="demo"></p>
 
+	<div class="container">
     <div id="carousel">
       <h3> Scroll through the images and learn how to spell each letter of your name!
       <br><br> Click the video below to start!</h3>
         <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselCaptions" data-slide-to="A" class="active"></li>
-            <li data-target="#carouselCaptions" data-slide-to="B"></li>
-            <li data-target="#carouselCaptions" data-slide-to="C"></li>
-          </ol>
-
           <div class="carousel-inner">
             <div class="carousel-item active">
               <video id="video" onclick="this.play()" style="border-radius:1em" src="name.mov" class="d-block w-100" style="border-radius:1em"></video>
@@ -109,11 +105,11 @@
           </a>
         </div>
       </div>
+	  </div>
 
 
     <div class="container" id="more">
       <h5> Want to learn even more about sign language?</h5>
-      <br>
       <a href="catresources.html" class="button">Click Here</a>
     </div>
 
