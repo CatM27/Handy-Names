@@ -234,6 +234,7 @@ a.button {
   text-decoration: none;
   font-size: 25px;
   cursor: pointer;
+  color:black;
 }
 
 a.button:hover {
