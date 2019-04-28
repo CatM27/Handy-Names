@@ -1,3 +1,7 @@
+function refreshPage(){
+    window.location.reload();
+} 
+
 var vid=document.getElementById("video");
 function disableLoop() {
 	vid.loop=false;
@@ -30,8 +34,6 @@ function outputname(e) {
    $(`#${letter+index}`).append(carouselItemHTMLImage);
    $(`#${letter+index}`).append(carouselCaption);
    })
-   delete x;
-   delete y;
 }
 
 
