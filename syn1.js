@@ -1,3 +1,11 @@
+var vid=document.getElementById("video");
+function disableLoop() {
+	vid.loop=false;
+	vid.load();
+}
+
+$('.carousel').carousel();
+
 function outputname(e) {
    let x,y,name,a,b,answer;
    x=document.getElementById("form1");
@@ -8,30 +16,22 @@ function outputname(e) {
    console.log(letter);
    console.log(index);
 
-
-   let carouselItemHTMLItem=`<div class="carousel-item" id="${letter-index}"></div>` // string interpoliation -> uses backticks to give access to variable inside string
-
-   if (letter === "H" || letter === "J") {
-     let carouselItemHTMLImage=`<div .... video`
+   var carouselItemHTMLItem=`<div class="carousel-item" id="${letter+index}"></div>` // string interpoliation -> uses backticks to give access to variable inside string
+   var carouselItemHTMLImage;
+   if (letter == "H" || letter == "J") {
+     carouselItemHTMLImage=`<video src="Letter_${letter.toUpperCase()}.mp4" class="d-block w-100" style="border-radius:1em" >`
    } else {
-     let carouselItemHTMLImage=`<img src="Letter_${letter.toUpperCase()}.png" class="d-block w-100" style="border-radius:1em" height=750px>`
+     carouselItemHTMLImage=`<img src="Letter_${letter.toUpperCase()}.png" class="d-block w-100" style="border-radius:1em">`
    }
 
+   var carouselCaption = `<div class="carousel-caption"><h4>${letter.toUpperCase()}</h4></div>`
+
    $(".carousel-inner").append(carouselItemHTMLItem);
-   $(`${letter-index}`).append(carouselItemHTMLImage);
- })
+   $(`#${letter+index}`).append(carouselItemHTMLImage);
+   $(`#${letter+index}`).append(carouselCaption);
+   })
+   delete x;
+   delete y;
 }
 
 
-// y.split('') /// ['d', 'a']
-//
-// ['d', 'a'].forEach( function(thing) {
-//   console.log(thing)
-// }
-//
-// // d
-// // a
-
-
-// const, let, var
-// == / ===
