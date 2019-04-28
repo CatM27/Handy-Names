@@ -4,11 +4,7 @@ function disableLoop() {
 	vid.load();
 }
 
-$('.carousel').carousel({
-	interval:false,
-	pause:true,
-	wrap:false
-});
+$('.carousel').carousel();
 
 function outputname(e) {
    let x,y,name,a,b,answer;
