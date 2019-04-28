@@ -207,7 +207,7 @@ button.navbar-toggler {
 }
 
 .card-back {
-  padding: 5px 5px 10px 5px;
+  padding: 10px 5px;
   transform: rotateY(180deg);
   backface-visibility: hidden;
   border-radius: 25px;
@@ -226,7 +226,7 @@ button.navbar-toggler {
   font-size: 5vh 5vw;
   text-align: center;
   margin: 0 auto;
-  padding: 10px 10px 0 10px;
+  padding: 0 10px;
 }
 
 h4.card-title {
@@ -235,7 +235,7 @@ h4.card-title {
  font-size: 4vh 4vw;
  text-align: center;
  margin: 0 auto;
- padding: 5px 10px 0 10px;
+ padding: 0 10px;
 }
 
 .card-back p {
@@ -249,7 +249,6 @@ h4.card-title {
 a {
   color: black;
   text-align: center;
-  width: 100%;
 }
 
 footer {
