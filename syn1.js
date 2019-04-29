@@ -1,6 +1,6 @@
 function refreshPage(){
     window.location.reload();
-} 
+}
 
 var vid=document.getElementById("video");
 function disableLoop() {
@@ -35,5 +35,3 @@ function outputname(e) {
    $(`#${letter+index}`).append(carouselCaption);
    })
 }
-
-
