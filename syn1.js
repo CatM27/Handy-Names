@@ -22,11 +22,8 @@ function outputname(e) {
 
    var carouselItemHTMLItem=`<div class="carousel-item" id="${letter+index}"></div>` // string interpoliation -> uses backticks to give access to variable inside string
    var carouselItemHTMLImage;
-   if (letter == "H" || letter == "J") {
-     carouselItemHTMLImage=`<video src="Letter_${letter.toUpperCase()}.mp4" class="d-block w-100" style="border-radius:1em" >`
-   } else {
      carouselItemHTMLImage=`<img src="Letter_${letter.toUpperCase()}.png" class="d-block w-100" style="border-radius:1em">`
-   }
+   
 
    var carouselCaption = `<div class="carousel-caption"><h4>${letter.toUpperCase()}</h4></div>`
 
